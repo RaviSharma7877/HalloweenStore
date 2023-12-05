@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Quicksand:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Creepster',sans-serif;
+    background-color: black;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/*  NavBar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    box-shadow: rgba(180, 180, 180, 0.16) 0px 10px 36px 0px, rgba(190, 190, 190, 0.06) 0px 0px 0px 1px;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav .logo  img {
+height: 100%;
+}
+nav div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+}
+nav div:nth-child(2) ul {
+    display: flex;
+    align-items: center;
+}
+nav div:nth-child(2) ul li {
+    margin: 0 4px;
+    padding: 0 4px;
+    list-style: none;
+}
+nav div:nth-child(2) > a {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.topbanner {
+    width: 100%;
+}
+.topbanner .bannerimg{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.topbanner .bannerimg img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+.topbanner .bannerdetails{
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    padding: 20px 30px;
+    width: 45vw;
+    background-color: transparent;
+
+}
+.topbanner .bannerdetails p,
+.topbanner .bannerdetails h1 {
+    background-color: transparent;
+}
+.topbanner .bannerdetails p {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+.topbanner .bannerdetails h1 {
+    font-size: 55px;
+    font-weight: 500;
+}
+.topbanner .bannerdetails button {
+    background-color: rgb(255, 140, 0);
+    border: none;
+    padding: 7px 20px;
+    border-radius: 7px;
+}
