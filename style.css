@@ -1,96 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Quicksand:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Quicksand:wght@300;400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Creepster',sans-serif;
-    background-color: black;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Creepster", sans-serif;
+  background-color: black;
+  color: #fff;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
 
 /*  NavBar */
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    box-shadow: rgba(180, 180, 180, 0.16) 0px 10px 36px 0px, rgba(190, 190, 190, 0.06) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  box-shadow: rgba(180, 180, 180, 0.16) 0px 10px 36px 0px,
+    rgba(190, 190, 190, 0.06) 0px 0px 0px 1px;
 }
 nav .logo {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-nav .logo  img {
-height: 100%;
+nav .logo img {
+  height: 100%;
 }
 nav div:nth-child(2) {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 nav div:nth-child(2) ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 nav div:nth-child(2) ul li {
-    margin: 0 4px;
-    padding: 0 4px;
-    list-style: none;
+  margin: 0 8px;
+  padding: 0 12px;
+  font-size: 20px;
+  list-style: none;
 }
 nav div:nth-child(2) > a {
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
 }
 .topbanner {
-    width: 100%;
+  width: 100%;
 }
-.topbanner .bannerimg{
-    width: 100%;
-    position: relative;
-    z-index: 0;
+.topbanner .bannerimg {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
 }
-.topbanner .bannerimg img{
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    aspect-ratio: 3/2;
+.topbanner .bannerimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.topbanner .bannerdetails{
-    position: absolute;
-    top: 180px;
-    left: 180px;
-    padding: 20px 30px;
-    width: 45vw;
-    background-color: transparent;
-
+.topbanner .bannerdetails {
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  padding: 20px 30px;
+  width: 45vw;
+  background-color: transparent;
 }
-.topbanner .bannerdetails p,
-.topbanner .bannerdetails h1 {
-    background-color: transparent;
+p,
+h1 {
+  background-color: transparent;
 }
 .topbanner .bannerdetails p {
-    font-family: sans-serif;
-    text-transform: uppercase;
-    padding: 8px 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 8px 0;
 }
 .topbanner .bannerdetails h1 {
-    font-size: 55px;
-    font-weight: 500;
+  font-size: 55px;
+  font-weight: 500;
 }
 .topbanner .bannerdetails button {
-    background-color: rgb(255, 140, 0);
-    border: none;
-    padding: 7px 20px;
-    border-radius: 7px;
+  background-color: rgb(255, 140, 0);
+  border: none;
+  padding: 7px 20px;
+  border-radius: 7px;
+}
+.decorationcards> div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px ;
+  padding: 23px 0;
+}
+.decorationcards> div p{
+  color: orange;
+}
+.decorationcard .cardcontainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.decorationcard .cardcontainer .card{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 13px;
+  margin: 0 13px;
+  justify-content: flex-start;
+}
+.decorationcard .cardcontainer .card img {
+  width: 100%;
+  height: 25vh;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.decorationcard .cardcontainer .card .carddetails {
+  margin-top: 12px;
+  line-height: 1.5;
+}
+.decorationcard .cardcontainer .card .carddetails .price{
+  color: orange;
+  font-family: sans-serif;
+}
+.decorationcard .cardcontainer .card .carddetails button{
+  background-color: orange;
+  padding: 11px 24px;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+.banner2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+.banner2 .banner2img{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+.banner2 .banner2img img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.banner2data {
+  width: 40%;
+  position: relative;
+  top: -250px;
+  left: 60px;
+  z-index: 5;
+  background-color: transparent;
 }
