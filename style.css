@@ -201,6 +201,33 @@ h1 {
   padding: 12px 0;
 }
 
+.ourcontent {
+  
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.ourcontent >div {
+  display: flex;
+  padding: 36px;
+  width: 60%;
+  border-top: 1px solid gray;
+  flex-wrap: wrap;
+}
+.ourcontent >div div{
+  line-height: 2;
+  width: 50%;
+}
+.ourcontent >div div p:last-child{
+  font-family: sans-serif;
+}
+
+
+
+
+/* Footer */
+
 footer {
   
   display: flex;
@@ -212,13 +239,45 @@ footer >div {
   display: flex;
   padding: 36px;
   width: 60%;
+  height: 8vh;
   border-top: 1px solid gray;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-footer >div div{
-  line-height: 2;
-  width: 50%;
+footer .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-footer >div div p:last-child{
-  font-family: sans-serif;
+footer .logo img {
+  height: 100%;
+}
+footer div:nth-child(2) ul {
+  display: flex;
+  align-items: center;
+}
+footer div:nth-child(2) ul li {
+  margin: 0 8px;
+  padding: 0 12px;
+  font-size: 20px;
+  list-style: none;
+}
+footer .social a{
+margin: 0 4px;
+padding: 0 4px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Shop  */
+.shopsection {
+  padding-top: 100px;
 }
