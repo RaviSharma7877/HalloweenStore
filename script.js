@@ -2,7 +2,7 @@ var btns = document.querySelectorAll(".btn")
 var count = document.querySelector(".cartitemcount")
 var arr = []
 var item = "Item added to cart"
-
+var sorting = document.querySelector("#sorting")
 
 btns.forEach((btn)=>{
  btn.addEventListener("click", ()=>{
@@ -15,9 +15,25 @@ let body = document.querySelector(".cardcontainer")
 
 let shopdata = [{"img": "/assets/cardimg1.jpg", "title": "Horror Doll", "price": "65.00"},{"img": "/assets/cardimg2.jpg", "title": "Horror Dress", "price": "75.00"},{"img": "/assets/cardimg3.jpg", "title": "Horror Costume", "price": "85.00"},{"img": "/assets/cardimg1.jpg", "title": "Horror Doll", "price": "65.00"},{"img": "/assets/cardimg2.jpg", "title": "Horror Dress", "price": "75.00"},{"img": "/assets/cardimg3.jpg", "title": "Horror Costume", "price": "85.00"},{"img": "/assets/cardimg1.jpg", "title": "Horror Doll", "price": "65.00"},{"img": "/assets/cardimg2.jpg", "title": "Horror Dress", "price": "75.00"},{"img": "/assets/cardimg3.jpg", "title": "Horror Costume", "price": "85.00"},]
 
-Dispaly()
 
-function Dispaly() {
+
+sorting.addEventListener('change',()=> {
+    console.log(sorting.value)
+    if(sorting.value==='Default_Sorting'){
+        Dispaly(shopdata)
+    }else if (sorting.value==='Sort_by_price_low_to_high'){
+        var data = shopdata.sort((a,b)=> a.price-b.price)
+        Dispaly(data)
+    }else {
+        var data = shopdata.sort((a,b)=> b.price-a.price)
+        Dispaly(data)
+    }
+})
+
+
+
+function Dispaly(shopdata) {
+    body.innerHTML = ''
     shopdata.map((item)=> {
         let card = document.createElement("div")
         card.classList.add('card')
