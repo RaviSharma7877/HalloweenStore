@@ -279,5 +279,16 @@ padding: 0 4px;
 
 /* Shop  */
 .shopsection {
-  padding-top: 100px;
+  padding: 100px;
+  width: 100%;
+}
+.shopsection > h1 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.shopsection > div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
 }

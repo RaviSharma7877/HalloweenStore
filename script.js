@@ -3,6 +3,7 @@ var count = document.querySelector(".cartitemcount")
 var arr = []
 var item = "Item added to cart"
 var sorting = document.querySelector("#sorting")
+var productcount = document.querySelector(".productcount")
 
 btns.forEach((btn)=>{
  btn.addEventListener("click", ()=>{
@@ -15,7 +16,7 @@ let body = document.querySelector(".cardcontainer")
 
 let shopdata = [{"img": "/assets/cardimg1.jpg", "title": "Horror Doll", "price": "65.00"},{"img": "/assets/cardimg2.jpg", "title": "Horror Dress", "price": "75.00"},{"img": "/assets/cardimg3.jpg", "title": "Horror Costume", "price": "85.00"},{"img": "/assets/cardimg1.jpg", "title": "Horror Doll", "price": "65.00"},{"img": "/assets/cardimg2.jpg", "title": "Horror Dress", "price": "75.00"},{"img": "/assets/cardimg3.jpg", "title": "Horror Costume", "price": "85.00"},{"img": "/assets/cardimg1.jpg", "title": "Horror Doll", "price": "65.00"},{"img": "/assets/cardimg2.jpg", "title": "Horror Dress", "price": "75.00"},{"img": "/assets/cardimg3.jpg", "title": "Horror Costume", "price": "85.00"},]
 
-
+productcount.innerHTML = shopdata.length
 
 sorting.addEventListener('change',()=> {
     console.log(sorting.value)
@@ -31,7 +32,7 @@ sorting.addEventListener('change',()=> {
 })
 
 
-
+Dispaly(shopdata)
 function Dispaly(shopdata) {
     body.innerHTML = ''
     shopdata.map((item)=> {
