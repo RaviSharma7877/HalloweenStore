@@ -92,24 +92,24 @@ h1 {
   padding: 7px 20px;
   border-radius: 7px;
 }
-.decorationcards> div {
+.decorationcards > div {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 15px ;
+  margin: 15px;
   padding: 23px 0;
 }
-.decorationcards> div p{
+.decorationcards > div p {
   color: orange;
 }
-.decorationcard .cardcontainer{
+.decorationcard .cardcontainer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.decorationcard .cardcontainer .card{
+.decorationcard .cardcontainer .card {
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -135,11 +135,11 @@ h1 {
   margin-top: 12px;
   line-height: 1.5;
 }
-.decorationcard .cardcontainer .card .carddetails .price{
+.decorationcard .cardcontainer .card .carddetails .price {
   color: orange;
   font-family: sans-serif;
 }
-.decorationcard .cardcontainer .card .carddetails button{
+.decorationcard .cardcontainer .card .carddetails button {
   background-color: orange;
   padding: 11px 24px;
   border-radius: 8px;
@@ -150,9 +150,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  
 }
-.banner2 .banner2img{
+.banner2 .banner2img {
   width: 60%;
   display: flex;
   align-items: center;
@@ -161,7 +160,7 @@ h1 {
   padding-top: 20px;
   position: relative;
 }
-.banner2 .banner2img img{
+.banner2 .banner2img img {
   width: 100%;
   height: 50vh;
   object-fit: cover;
@@ -174,7 +173,6 @@ h1 {
   z-index: 5;
   background-color: transparent;
 }
-
 
 /* Testimonials */
 .testmoinals {
@@ -194,7 +192,7 @@ h1 {
   width: 100%;
   padding: 16px 0;
 }
-.details img{
+.details img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -202,40 +200,35 @@ h1 {
 }
 
 .ourcontent {
-  
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.ourcontent >div {
+.ourcontent > div {
   display: flex;
   padding: 36px;
   width: 60%;
   border-top: 1px solid gray;
   flex-wrap: wrap;
 }
-.ourcontent >div div{
+.ourcontent > div div {
   line-height: 2;
   width: 50%;
 }
-.ourcontent >div div p:last-child{
+.ourcontent > div div p:last-child {
   font-family: sans-serif;
 }
-
-
-
 
 /* Footer */
 
 footer {
-  
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-footer >div {
+footer > div {
   display: flex;
   padding: 36px;
   width: 60%;
@@ -263,19 +256,10 @@ footer div:nth-child(2) ul li {
   font-size: 20px;
   list-style: none;
 }
-footer .social a{
-margin: 0 4px;
-padding: 0 4px;
+footer .social a {
+  margin: 0 4px;
+  padding: 0 4px;
 }
-
-
-
-
-
-
-
-
-
 
 /* Shop  */
 .shopsection {
@@ -291,4 +275,38 @@ padding: 0 4px;
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
+}
+
+.aboutmain {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutmain> p {
+  padding-bottom: 6px;
+  font-family: sans-serif;
+  color: orange;
+  text-transform: uppercase;
+}
+.aboutmain> h1 {
+  padding-bottom: 12px;
+  font-size: 40px;
+}
+.aboutmain > div {
+  display: flex;
+  width: 70%;
+  height: 50vh;
+  justify-content: space-around;
+}
+.aboutmain > div div{
+  width: 45%;
+}
+.aboutmain > div div h1 {
+  padding: 12px 0;
+}
+.aboutmain > div div p {
+  padding: 13px;
+  border-bottom: 1px solid gray;
 }
