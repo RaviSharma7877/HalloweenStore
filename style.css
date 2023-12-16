@@ -263,7 +263,6 @@ footer .social a {
 
 /* Shop  */
 .shopsection {
-  padding: 100px;
   width: 100%;
 }
 .shopsection > h1 {
@@ -309,4 +308,37 @@ footer .social a {
 .aboutmain > div div p {
   padding: 13px;
   border-bottom: 1px solid gray;
+}
+
+
+
+
+.contactus {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contactus div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactus div p {
+  padding: 20px 0;
+}
+.form {
+  border: 1px solid white;
+  padding: 13px;
+  margin: 9px;
+}
+.form div {
+  padding: 13px;
+}
+.form div input{
+  padding: 9px 13px;
+  margin: 7px 0;
 }
